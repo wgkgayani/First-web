@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+header{
+    background-color: rgb(239, 144, 188);
+    color: black;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.home{
+   /* background-image: ;*/
+    background-size: cover;  /*bg eka page eka purawat thibima*/
+}  
+nav ul {
+    list-style: none;  /* li wala dot eka nati kirima*/
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none; /* nav eke underline eka nati kirima*/
+     font-size: 16px;
+    transition: color 0.3s;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+nav ul li img{
+    border-radius: 50%;          /*rawmaka kirima image eka*/
+    height: 30px;
+    width: 30px;
+    
+}
+
+
+/*nav img{
+    cursor: pointer;
+    
+}
+
+nav ul.dropdown a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown.content{
+    display: none;
+    position: absolute;
+    background-color:rgb(239, 144, 188) ;
+    min-width: 100px;
+    box-shadow:2px 2px 5px rgb(245, 41, 136);
+    margin-bottom: 20px;
+}*/
+.caption {
+    
+    margin-right: 150px;
+    height: 80vh;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 65px;
+    font-weight: bold;
+    background-size: cover;
+}
+.btn-login{
+    background-color: rgb(125, 107, 240);
+    color: black;
+    padding: 10px 12px;
+    font-size: 20px;
+    text-decoration: none;   
+    border-radius: 35px;    /*kotte mulu rawm kirima*/
+   box-shadow: 4px 4px 4px rgb(71, 70, 70);
+}
+.btn-login:hover{
+    background-color: blue;
+}
+.home_grid{
+   
+    margin-top: 4rem;
+    display: grid;                      /*img eka para eka ekatam depaththe thibima*/
+   grid-template-columns: repeat(2, 1fr);  /* img ekai para ekai 2k witarak eka line eke thibe. namuth display eke size eka wens kern wita agest nowee*/ 
+   gap: 50px;  
+}
+.home-img img{
+   margin-left: 20px;
+   border-radius: 50%;
+}
+
+
+.about-title{
+    background-color:rgb(177, 171, 174);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 50px;
+}
+.about_grid{
+   
+    margin-top: 4rem;
+    display: grid;                      /*img eka para eka ekatam depaththe thibima*/
+   grid-template-columns: repeat(2, 1fr);  /* img ekai para ekai 2k witarak eka line eke thibe. namuth display eke size eka wens kern wita agest nowee*/ 
+   gap: 50px;  
+}
+.img{
+   background-image:"D:\my small web site\workplace-desk-feminine-notes.jpg"; 
+}
+.about-paragraph{
+    background-color: rgb(113, 74, 93) ;
+    color: rgb(255, 255, 255);
+    padding: 90px 60px ;                 /*para eke ihala his kotas haa depaththe his kotas*/
+    margin-right: 150px;
+    border-radius: 15px;
+    text-align: justify;                /*paara eka samanawa wachana bedii thibima*/
+    height: 500px;
+}
+.about-img{
+    padding: 25px 40px 25px;
+    margin-left:100px;
+    margin-right: 90px;
+    border-radius: 15px;
+    border: 0cm;
+    box-shadow: 5px 5px 8px rgb(77, 76, 76);
+}
+
+
+.Category-title{
+    background-color: rgb(177, 171, 174);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 50px;
+}
+.Category-title1{
+    background-color:rgb(235, 175, 203) ;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 10px;
+}
+.Category-title2{
+    background-color:rgb(235, 175, 203);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 10px;
+}
+
+
+.Category_grid {
+    margin-left: 150px;       /*img thiyen kotase depaththe his ida kotas. e kotas anuwa eka line ekaka image ganan wenas wee.*/
+    margin-right: 150px;      
+  }
+.Category_grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*samana width eka athi card hadei. iada thiyena widiyat card ganana wenas we*/ 
+    gap: 20px;
+    padding: 0 20px;
+}
+.Category_card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+.Category_card img{
+    max-width: 200px;
+    max-height: 150px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.Category_card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+.Category_card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+.Category_card a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Category_card a:hover {
+    color: #0056b3;
+}
+
+
+.FAQ-title{
+    background-color: rgb(177, 171, 174);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 50px;      
+}
+.FAQ_grid{
+    margin-top: 2rem;
+    display: grid;                      /*img eka para eka ekatam depaththe thibima*/
+   grid-template-columns: repeat(2, 1fr);  /* img ekai para ekai 2k witarak eka line eke thibe. namuth display eke size eka wens kern wita agest nowee*/ 
+   gap: 10px;
+}
+.FAQ_card2 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  /*samana width eka athi card hadei. iada thiyena widiyat card ganana wenas we*/ 
+    gap: 10px;
+    padding: 0 20px;
+   
+}
+.FAQ_card {
+    background-color: #f1b1b1;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 10px;
+    width: 900px;
+}
+.FAQ_card2 h4 {
+    margin-bottom: 1.5rem;
+    color: #666;
+    
+}
+.FAQ_card1{
+    padding: 10px 10px 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 0cm;
+    /*box-shadow: 5px 5px 8px rgb(77, 76, 76);*/
+}
+.FAQ_card1 img{
+    border-radius: 15px;
+    height: 400px;
+    width: 400px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+
+.Feedback-title{
+    background-color: rgb(177, 171, 174);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 50px;      
+}
+.Category_card2 img {
+    max-width: 200px;
+    max-height: 150px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+.Category_grid2 {
+    margin-left: 150px;       /*img thiyen kotase depaththe his ida kotas. e kotas anuwa eka line ekaka image ganan wenas wee.*/
+    margin-right: 150px;      
+  }
+.Category_grid2 {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*samana width eka athi card hadei. iada thiyena widiyat card ganana wenas we*/ 
+    gap: 20px;
+    padding: 0 20px;
+}
+.Category_card2 {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+.Category_card2 img{
+    max-width: 200px;
+    max-height: 150px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+.Category_card2 h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+.Category_card2 p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+
+.footer {
+    background-color: #222;
+    color: #f1f1f1;
+    padding: 20px 0;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+  /* Section Styles */
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+  
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+  
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+  
+.footer-section ul {
+    padding-left: 10px;
+}
+  
+.footer-section ul li a {
+    color: #ddd;
+    transition: color 0.3s;
+}
+  
+.footer-section ul li a:hover {
+    color: #fff;
+}
+  
+  /* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+  
+.footer-bottom p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+  
+.social-icons img:hover {
+    filter: brightness(1) invert(0);
+}
+  
+/* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin: 10px 0;
+    }
+}
